@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice8</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .detail{
+            height: 10vh;
+            width:100vw;
+            background-color: green;
+        
+            align-items: center;
+        }
+        
+        .detail li {
+            display:inline;
+            padding:30px;
+            
+        }
+        
+        .content {
+            height: 100vh;
+            background: yellow;
+        }
+        
+        .progress {
+            background-color: red;
+            height: 3px;
+            animation: manish 1s ease-in-out 1;
+        }
+        /* .p{ */
+        /* background-color: red; */
+        
+
+
+        @keyframes manish {
+            0% {
+                width: 0;
+            }
+
+            60% {
+                width: 70vw;
+            }
+
+            100% {
+                width: 100vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="progress"></div>
+    <div class="detail">
+        <nav>
+            <ul>
+                <li>home</li>
+                <li>about</li>
+                <li>contact</li>
+            </ul>
+            </nav>
+        </div>
+    <main>
+        <div class="content">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum ea voluptas unde enim, aut repellendus
+            quibusdam minima ipsam, aspernatur sunt, quis quod nihil odit excepturi distinctio labore? Magni, esse
+            veniam.
+        </div>
+    </main>
+</body>
+
+</html>

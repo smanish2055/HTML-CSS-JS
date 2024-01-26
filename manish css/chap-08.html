@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transmition</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            background-color: brown;
+            height: 80vh;
+            font-size: 20px;
+            color: white;
+            /* transform:translate(50px); */
+
+
+        }
+
+        .box {
+            border: 3px solid black;
+            transform: translate(50px, 50px) rotate(45deg);
+            transform-origin: 0;
+            /* transform: scale(2); */
+            /* transform: scalex(3); */
+            /* transform: scaley(8); */
+            /* transform:skew(5deg,0deg); */
+            /* transform: skew(50deg,7deg); */
+            display: inline-block;
+        }
+
+        img:hover {
+            width: 300px;
+            height: 700px;
+        }
+
+        img {
+            width: 500px;
+            height: 500px;
+            transition-property: width;
+            transition-duration: 3s;
+            transition-timing-function: ease-in;
+            /* transition: width 3s ease-in;     */
+            transition: width 2s ease-in, height 3s ease-in;
+            0% {
+                width: 0;
+            }
+
+            60% {
+                width: 60vw;
+            }
+
+            100% {
+                width: 100vw;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <img id="myimage" src=https://source.unsplash.com/300x300/?nature,water>
+            <botton id="btn">toggle</botton>
+        </div>
+        <div class="box">
+            <img id="myimage" src=https://source.unsplash.com/300x300/?nature,water>
+            <botton id="btn">toggle</botton>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chap07prcts</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            display: inline-grid;
+            grid-template-columns: auto auto auto;
+
+        }
+
+       li {
+            list-style: none;
+            padding: 20px;
+            /* margin: 20px; */
+            display: inline;
+        }
+
+        header {
+            background: green;
+            color: white;
+            /* padding:100px; */
+        }
+
+        .container {
+            /* align-content: space-between; */
+            display: grid;
+            grid-template-columns: auto auto auto ;
+            background-color: black;
+            height: 40vh;
+            width: 100vw;
+            color: white;
+            grid-row-gap: 3px;
+            grid-column-gap: 3px;
+            justify-content:space-between;
+            /* justify-content: space-between; */
+
+        }
+
+        .item {
+            background-color: hotpink;
+            border: 3px solid red;
+            color: white;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>home</li>
+                <li>about</li>
+                <li>contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="item"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, sit.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, quam!</div>
+            <!-- <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, reprehenderit!</div> -->
+            <!-- <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, animi. </div> -->
+    </div>
+
+</body>
+
+</html>

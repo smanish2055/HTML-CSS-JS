@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #container{
+        color:brown;
+        border:4px solid burlywood;
+    }
+    .counter{
+        color:brown;
+        border:4px solid burlywood;  
+    }
+</style>
+<body>
+    <div id="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nostrum magni dolorum. Quo numquam ipsam eos sit possimus maxime sunt.</p>
+    </div>
+    <hr>
+    <div class="counter"><p>  Lorem ipsum dolor sit amet.</p>
+      </div>
+    
+</body>
+<script>
+   let v= document.getElementById('container');
+    v.addEventListener("click",function(){
+        v.style.color="white";
+       v.style.background="green";
+       v.innerHTML="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, numquam at possimus, assumenda, ex alias corrupti adipisci tempore sapiente quis consectetur eveniet perspiciatis? Eius, est. Accusantium facere porro, esse illum voluptatem illo ex vel?";
+     
+    })
+
+
+    var c= document.getElementsByClassName('counter');
+    c.addEventListener("click",function(){
+    c.style.background="green";
+    })
+</script>
+</html>

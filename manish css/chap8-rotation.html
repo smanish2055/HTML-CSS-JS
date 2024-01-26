@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animantion</title>
+    <style>
+    .container{
+        height:100vh;
+        background:green;
+        display:flex;
+        justify-content:space-between;
+        border:black;
+    }
+    .manish{
+        background:red;
+        color:white;
+        height:20vh;
+        width:20vw;
+        display:flex;
+        /* justify-content:center; */
+        align-items: center;
+        border:3px solid black;
+        animation-name:manish;
+        animation-duration:3s;
+        animation-timing-function:ease-in;
+        animation-iteration-count:4;
+        /* animation-direction:alternate-reverse; */
+        /* animation:manish 3s ease-in 4 alternate-reverse; */
+ }
+ img{
+        animation-name:manish;
+        animation-duration:1s;
+        animation-timing-function:ease-in;
+        animation-iteration-count:infinite;
+        /* animation-direction:alternate-reverse; */
+
+ }
+
+ @keyframes manish{
+     0%{
+         transform: rotate(0deg);
+     }
+     100%{
+         transform:rotate(360deg);
+     }
+ 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="manish">
+            <img src ="image.jpg"height ="50vh "width="50vw">
+        </div>
+        <div class="manish">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+        
+    </div>
+    
+</body>
+</html>

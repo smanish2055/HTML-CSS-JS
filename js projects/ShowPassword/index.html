@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    #password-container {
+      position: relative;
+    }
+
+    #password, #show-password {
+      padding: 10px;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    #show-password {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+  </style>
+  <title>Show Password Example</title>
+</head>
+<body>
+
+<div id="password-container">
+  <label for="password">Password:</label>
+  <input type="password" id="password" placeholder="Enter your password">
+  <span id="show-password" onclick="togglePasswordVisibility()">Show</span>
+</div>
+
+<script>
+  function togglePasswordVisibility() {
+    var passwordInput = document.getElementById('password');
+    var showPasswordButton = document.getElementById('show-password');
+
+    if (passwordInput.type === 'password') {
+      passwordInput.type = 'text';
+      showPasswordButton.textContent = 'Hide';
+    } else {
+      passwordInput.type = 'password';
+      showPasswordButton.textContent = 'Show';
+    }
+  }
+</script>
+
+</body>
+</html>

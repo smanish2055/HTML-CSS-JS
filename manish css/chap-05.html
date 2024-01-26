@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>size position lists</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 5000px;
+        }
+
+        html {
+            font-size: 20px;
+        }
+
+        .container {
+            width: 103vw;
+            height: 50px;
+            font-size: 3vw;
+            background: yellow;
+            border: 3px dotted black;
+            /* padding: 100px; */
+            /* max-height: 50vh;height doesnot exceed to maxheight */
+            /* position: relative; */
+            /* position: fixed; */
+            position: sticky;
+            top: 0;
+            z-index: 1;
+
+        }
+
+        .any {
+            background: green;
+            width: 40vw;
+            /* height: 50vh; */
+            min-height: 40vh;
+            /*there should be minimum height 40*/
+            position: relative;
+            left: 100px;
+            /* position:fixed; */ 
+            /* z-index: 2; */
+        }
+
+        .box {
+            /* font-size:2em; */
+            font-size: 2rem;
+            background: tomato;
+            width: 20vw;
+            /* height:20vh; */
+            position: absolute;
+            right: 0;
+            position: fixed;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p>this is my website</p>
+    </div>
+    <div class="any">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil magnam fugit assumenda cum pariatur impedit,
+        minima natus quis odio dolor eum ad repellat hic, officia magni, tempore reprehenderit ea! Accusamus est et
+        totam obcaecati?</div>
+    <div class="box">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid nostrum quaerat minus obcaecati nemo vel
+        doloremque aut cumque quas quos?
+    </div>
+    <!-- </div> -->
+
+</body>
+
+</html>

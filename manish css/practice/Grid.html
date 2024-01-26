@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>title</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+      .container {
+        background-color: red;
+        width: 700px;
+        height: 600px;
+        display: grid;
+        /* grid-template-rows:133px 133px 133px ;
+        grid-template-columns:133px 133px 133px; */
+        /* grid-template-columns: repeat(3, 1fr); */
+        /* grid-template-rows: repeat(3, 1fr); */
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 110px 1fr 1fr ;
+
+        row-gap: 12px;
+        column-gap: 12px;
+        margin: 50px auto;
+      }
+      .items {
+        background-color: aqua;
+        /* height: 170px;
+        width: 200px; */
+      }
+
+      .items1 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        text-align: center;
+      }
+
+      .container1{
+        margin-top: 70px;
+        background-color: red;
+        width: 700px;
+        height: 600px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 110px 1fr 1fr ;
+        /* justify-content:center; */
+        row-gap: 12px;
+        column-gap: 12px;
+        /* place-items: center; */
+       
+        
+      }
+
+      .item2 {
+        background-color: aqua;
+         height: 122px;
+        /* width: 200px; */
+
+      }
+
+      /* .item3{
+        grid-column-start: 1;
+        grid-column-end: 4;
+      } */
+      .item4{
+        margin-top: 10px;
+        align-items: center;
+        width: 100px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="items items1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, ad soluta
+        d
+      </div>
+      <div class="items"></div>
+      <div class="items"></div>
+      <div class="items"></div>
+      <div class="items"></div>
+      <div class="items"></div>
+      <div class="items"></div>
+      <div class="items"></div>
+      <div class="items"></div>
+    </div>
+
+
+    <div class="container1">
+        <div class="item2 item3"></div>
+        <div class="item2 item4 ">Lorem ipsum dolor sit amet.</div>
+        <div class="item2"></div>
+        
+    </div>
+  </body>
+</html>
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html> -->
+
+<!-- 
+    <meta charset="UTF-8">
+    This meta tag declares the character encoding for the document. In this example, it's set to UTF-8, which is a widely used character encoding.
+
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    This meta tag is commonly used to control the viewport settings, which is important for responsive web design. It ensures that the page is displayed properly on various devices and screen sizes.
+
+
+-->
+
+
